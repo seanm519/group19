@@ -17,6 +17,7 @@ const cors_1 = __importDefault(require("cors"));
 const db_1 = require("./db");
 const keys_1 = require("./keys");
 const port = process.env.PORT || 3000;
+const path = require('path');
 // const session = require('express-session'); 
 const express_session_1 = __importDefault(require("express-session"));
 const app = (0, express_1.default)();
@@ -29,7 +30,7 @@ app.use((0, express_session_1.default)({
     origin: 'http://localhost:19006' // replace with your actual origin
 }));
 app.get('/', (req, res) => {
-    res.send('Express + TypeScript Server');
+    res.sendFile(path.join(__dirname, 'frontend', 'App.js'));
 });
 app.post('/create', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { name, description, creation_date } = req.body;

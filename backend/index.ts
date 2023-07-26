@@ -4,6 +4,7 @@ import cors from 'cors';
 import { addToDo, deleteItem, updateItem, getList, createUser, findUserByUsername, comparePasswords } from './db'
 import { uri_key } from './keys';
 const port = process.env.PORT || 3000;
+const path = require('path');
 
 // const session = require('express-session'); 
 import session, { Session } from 'express-session';
@@ -22,7 +23,7 @@ app.use(
 )
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('Express + TypeScript Server');
+    res.sendFile(path.join(__dirname, 'frontend', 'App.js'));
 });
 
 // basic commands
