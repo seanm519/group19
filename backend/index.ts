@@ -3,7 +3,7 @@ import express, { Express, NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import { addToDo, deleteItem, updateItem, getList, createUser, findUserByUsername, comparePasswords } from './db'
 import { uri_key } from './keys';
-
+const port = process.env.PORT || 3000;
 
 // const session = require('express-session'); 
 import session, { Session } from 'express-session';

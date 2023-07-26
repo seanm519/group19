@@ -16,6 +16,7 @@ const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const db_1 = require("./db");
 const keys_1 = require("./keys");
+const port = process.env.PORT || 3000;
 // const session = require('express-session'); 
 const express_session_1 = __importDefault(require("express-session"));
 const app = (0, express_1.default)();
