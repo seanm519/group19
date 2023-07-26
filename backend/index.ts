@@ -23,7 +23,7 @@ app.use(
 )
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('App.js');
+    res.sendFile('App.js');
 });
 
 // basic commands
