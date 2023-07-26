@@ -23,7 +23,7 @@ app.use(
 )
 
 app.get('/', (req: Request, res: Response) => {
-    res.sendFile('../frontend/App.js');
+    res.send('../frontend/App.js');
 });
 
 // basic commands
