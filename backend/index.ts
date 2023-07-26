@@ -23,7 +23,7 @@ app.use(
 )
 
 app.get('/', (req: Request, res: Response) => {
-    res.sendFile(path.join(__dirname, 'frontend', 'App.js'));
+    res.sendFile(path.join('backend', 'frontend', 'App.js'));
 });
 
 // basic commands
