@@ -22,7 +22,7 @@ app.use(
 )
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('App.js');
+    res.send('Express + TypeScript Server');
 });
 
 // basic commands

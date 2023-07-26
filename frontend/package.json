@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "main": "App.js",
+  "main": "Index.js",
   "scripts": {
     "start": "App.js",
     "android": "expo start --android",
