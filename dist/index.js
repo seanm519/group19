@@ -14,8 +14,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
-const db_1 = require("../dist/db");
-const keys_1 = require("../dist/keys");
+const db_1 = require("./db");
+const keys_1 = require("./keys");
 const port = process.env.PORT || 3000;
 const path = require('path');
 // const session = require('express-session'); 
@@ -30,7 +30,7 @@ app.use((0, express_session_1.default)({
     origin: 'http://localhost:19006' // replace with your actual origin
 }));
 app.get('/', (req, res) => {
-    res.sendFile(path.join('backend', 'frontend', 'App.js'));
+    res.send('App.js');
 });
 app.post('/create', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { name, description, creation_date } = req.body;
