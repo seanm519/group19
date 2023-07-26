@@ -141,5 +141,5 @@ app.post('/logout', async (req: Request, res: Response) => {
     })
 })
 
-app.listen(5678);
+app.listen(port);
 console.log("Server is running...");

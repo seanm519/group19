@@ -106,5 +106,5 @@ app.post('/logout', (req, res) => __awaiter(void 0, void 0, void 0, function* ()
         res.json({ Message: 'Logout successful!' });
     });
 }));
-app.listen(5678);
+app.listen(port);
 console.log("Server is running...");
