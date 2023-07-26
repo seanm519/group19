@@ -5,10 +5,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 // different pages
-import SignUpScreen from './SignUpScreen';
-import LoginScreen from './LoginScreen';
-import CreateScreen from './CreateScreen'; // Import the CreateScreen component
-import Todoscreen from './Todoscreen';
+import SignUpScreen from '../frontend/SignUpScreen';
+import LoginScreen from '../frontend/LoginScreen';
+import CreateScreen from '../frontend/CreateScreen'; // Import the CreateScreen component
+import Todoscreen from '../frontend/Todoscreen';
 
 
 export default function App() {
