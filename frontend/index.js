@@ -14,8 +14,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
-const db_1 = require("./db");
-const keys_1 = require("./keys");
+const db_1 = require("../dist/db");
+const keys_1 = require("../dist/keys");
 const port = process.env.PORT || 3000;
 const path = require('path');
 // const session = require('express-session'); 
