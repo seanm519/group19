@@ -28,6 +28,9 @@ app.use((0, express_session_1.default)({
 }), (0, cors_1.default)({
     origin: 'http://localhost:19006' // replace with your actual origin
 }));
+app.get('/', (req, res) => {
+    res.send('Express + TypeScript Server');
+});
 app.post('/create', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { name, description, creation_date } = req.body;
     const newTodo = {
