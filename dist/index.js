@@ -112,7 +112,7 @@ app.post('/delete/:username', (req, res) => __awaiter(void 0, void 0, void 0, fu
 }));
 // app.listen(5678);
 // console.log("Server is running...");
-const port = 5678;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });

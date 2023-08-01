@@ -151,7 +151,7 @@ app.post('/delete/:username', async (req: Request, res: Response) => {
 
 // app.listen(5678);
 // console.log("Server is running...");
-const port = 5678;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`)
 })
